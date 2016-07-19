@@ -1,13 +1,13 @@
 # eslint-plugin-jasmine-jquery
 
-ESLint rules for jasmine-jquery
+ESLint rules for [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
 
 ## Installation
 
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ npm i eslint --save-dev
+$ npm install eslint --save-dev
 ```
 
 Next, install `eslint-plugin-jasmine-jquery`:
@@ -20,25 +20,69 @@ $ npm install eslint-plugin-jasmine-jquery --save-dev
 
 ## Usage
 
-Add `jasmine-jquery` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `jasmine-jquery` to the plugins section of your `.eslintrc` configuration file, as well as including `jasmine` and `jquery` environments:
 
 ```json
 {
-    "plugins": [
-        "jasmine-jquery"
-    ]
+  "plugins": [
+    "jasmine-jquery"
+  ],
+  "env": {
+    "jquery": true,
+    "jasmine": true
+  }
 }
 ```
 
+### Recommended configuration
 
-Then configure the rules you want to use under the rules section.
-
+Use the default settings by adding it to the extends section of your `.eslintrc`:
 ```json
 {
-    "rules": {
-        "jasmine-jquery/rule-name": 2
-    }
+  "extends": [
+    "plugin:jasmine-jquery/recommended"
+  ]
 }
 ```
 
 ## Supported Rules
+
+### `/no-global-shortcuts`
+The recommended config **enables all global shortcut methods by default**. (All methods as of jasmine-jquery v2.1.1, see the complete list here.)
+
+To disallow all jasmine-jquery's global shortcut methods, configure this rule:
+```json
+{
+  "rules": {
+    "jasmine-jquery/no-global-shortcuts": 2
+  }
+}
+```
+
+#### Options
+To allow certain methods, pass in an array as the second argument containing the exceptions:
+```json
+{
+  "rules": {
+    "jasmine-jquery/no-global-shortcuts": [2, ["loadFixtures", "setFixtures"]]
+  }
+}
+```
+
+This will throw an error for any global shortcut method except `loadFixtures()` and `setFixtures()`.
+
+## Development
+
+#### Install dev dependencies
+```
+npm install
+```
+
+#### Run tests
+```
+npm test
+```
+
+## Issues, Bugs, and Suggestions
+
+Report any issues or submit suggestions for rules on [GitHub](https://github.com/xxnatc/eslint-plugin-jasmine-jquery).
