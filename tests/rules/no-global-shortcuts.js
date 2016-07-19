@@ -32,4 +32,4 @@ RuleTester.describe('/no-global-shortcuts', function() {
       }
     ]
   });
-})
+});
