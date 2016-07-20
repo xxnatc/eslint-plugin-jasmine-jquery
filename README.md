@@ -49,9 +49,9 @@ Use the default settings by adding it to the extends section of your `.eslintrc`
 ## Supported Rules
 
 ### `/no-global-shortcuts`
-The recommended config **enables all global shortcut methods by default**. (All methods as of jasmine-jquery v2.1.1, see the complete list [here](https://github.com/xxnatc/eslint-plugin-jasmine-jquery/blob/master/lib/global-shortcut-config.js).)
+The recommended config **enables all global shortcut functions by default**. (All functions as of jasmine-jquery v2.1.1, see the complete list [here](https://github.com/xxnatc/eslint-plugin-jasmine-jquery/blob/master/lib/global-shortcut-config.js).)
 
-To disallow all jasmine-jquery's global shortcut methods, configure this rule:
+To disallow all jasmine-jquery's global shortcut functions, configure this rule:
 ```json
 {
   "rules": {
@@ -61,7 +61,7 @@ To disallow all jasmine-jquery's global shortcut methods, configure this rule:
 ```
 
 #### Options
-To allow certain methods, pass in an array as the second argument containing the exceptions:
+To allow certain functions, pass in an array as the second argument containing the exceptions:
 ```json
 {
   "rules": {

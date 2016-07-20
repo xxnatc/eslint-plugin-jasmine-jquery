@@ -13,7 +13,7 @@ RuleTester.describe('/no-global-shortcuts', function() {
     invalid: [
       {
         code: 'setFixtures(\'<div></div>\');',
-        errors: [{ message: 'Unexpected global shortcut method setFixtures' }]
+        errors: [{ message: 'Unexpected shortcut function \'setFixtures\'' }]
       }
     ]
   });
@@ -28,7 +28,7 @@ RuleTester.describe('/no-global-shortcuts', function() {
     invalid: [
       {
         code: 'loadFixtures(\'<div></div>\');',
-        errors: [{ message: 'Unexpected global shortcut method loadFixtures' }]
+        errors: [{ message: 'Unexpected shortcut function \'loadFixtures\'' }]
       }
     ]
   });
