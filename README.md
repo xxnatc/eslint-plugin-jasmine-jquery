@@ -1,5 +1,5 @@
 # eslint-plugin-jasmine-jquery
-[![Travis](https://img.shields.io/travis/xxnatc/eslint-plugin-jasmine-jquery.svg?style=flat-square)](https://github.com/xxnatc/eslint-plugin-jasmine-jquery)
+[![Travis](https://img.shields.io/travis/xxnatc/eslint-plugin-jasmine-jquery.svg?style=flat-square)](https://travis-ci.org/xxnatc/eslint-plugin-jasmine-jquery)
 
 ESLint rules for [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
 
