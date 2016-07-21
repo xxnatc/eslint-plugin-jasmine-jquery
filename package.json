@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jasmine-jquery",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ESLint rules for jasmine-jquery",
   "keywords": [
     "eslint",
