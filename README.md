@@ -89,3 +89,5 @@ npm test
 ## Issues, Bugs, and Suggestions
 
 Report any issues or submit suggestions for rules on [GitHub](https://github.com/xxnatc/eslint-plugin-jasmine-jquery).
+
+Special thanks to [@nathpaiva](https://github.com/nathpaiva) for contributing to the project.
